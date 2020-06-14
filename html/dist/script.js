@@ -12,6 +12,36 @@ $(function() {
   rearrangeTabs($('.tab-container .tab-strip'));
 });
 
+$(document).ready(function(){
+  $("#hide1").click(function(){
+    $("p").hide();
+  });
+  $("#show1").click(function(){
+    $("p").show();
+   
+  });
+  $("#hide2").click(function(){
+    $("p").hide();
+  });
+  $("#show2").click(function(){
+    $("p").show();
+  });
+  $("#hide3").click(function(){
+    $("#op3").hide();
+  });
+  $("#show3").click(function(){
+    $("#op3").show();
+   
+  });
+  $("#hide4").click(function(){
+    $("p").hide();
+  });
+  $("#show4").click(function(){
+    $("p").show();
+   
+  });
+});
+
 function setBindings() {
   $('.tab-container .tab-strip .tab .tab-button').click(function() {
     $(this)
