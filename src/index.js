@@ -6,7 +6,14 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div className="row">
+    <div className="column">
+      Hello
+    </div>
+    <div className="column">
     <CoolTabs />
+    </div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
