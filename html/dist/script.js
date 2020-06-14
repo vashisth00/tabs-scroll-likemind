@@ -36,8 +36,8 @@ $(document).ready(function(){
   $("#hide4").click(function(){
     $("p").hide();
   });
-  $("#show4").click(function(){
-    $("p").show();
+  $("#option3").click(function(){
+    $("#option3s").show();
    
   });
 });
