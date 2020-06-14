@@ -13,34 +13,18 @@ $(function() {
 });
 
 $(document).ready(function(){
-  $("#hide1").click(function(){
-    $("p").hide();
-  });
-  $("#show1").click(function(){
-    $("p").show();
-   
-  });
-  $("#hide2").click(function(){
-    $("p").hide();
-  });
-  $("#show2").click(function(){
-    $("p").show();
-  });
-  $("#hide3").click(function(){
-    $("#op3").hide();
-  });
-  $("#show3").click(function(){
-    $("#op3").show();
-   
-  });
-  $("#hide4").click(function(){
-    $("p").hide();
-  });
-  $("#option3").click(function(){
-    $("#option3s").show();
-   
-  });
-});
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
 
 function setBindings() {
   $('.tab-container .tab-strip .tab .tab-button').click(function() {
